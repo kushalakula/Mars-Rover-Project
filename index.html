@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/75/937/png-transparent-planet-earth-planet-mars-mercury-jupiter-mars-atmosphere-sphere-venus-thumbnail.png" type="image/x-icon">
+    <title>Mars Rover</title>
+    <style>
+        body{
+            margin: 0;
+            /* position: relative; */
+            /* font-size: 1em; */
+        }
+        #container{
+            box-sizing: border-box;
+            /* padding: 1em; */
+            width: auto;
+            height: 7em;
+            background-image: linear-gradient(90deg,rgb(187, 225, 238),cornsilk);
+            /* background-color:cornsilk; */
+            justify-content: space-around;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+        }
+        input{
+            box-sizing: border-box;
+            font-size: 1.2em;
+            width: 15em;
+            padding: 0.2em;
+            border-radius: 5px;
+            height: 2.5em;
+        }
+        #container button{
+            box-sizing: border-box;
+            /* height: 2em; */
+            padding: 0.2em;
+            /* border-radius: 5px; */
+            font-size: 1.2em;
+        }
+        #display{
+            margin: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #display .image{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 20em;
+            height: 15em;
+            /* border: 2px solid black; */
+            margin: 1em;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            /* margin: 5px; */
+        }
+        h1{
+            color: cornsilk;
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0.3em;
+        }
+        #navigator{
+            position: sticky;
+            top:0px;
+            padding: 0.5em;
+            background-color: rgb(246, 246, 246);
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        #navigator button{
+            font-size: 1.2em;
+            padding: 0.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mars Rover Photos</h1>
+    <div id="container">
+        <input type="date" name="" id="earthDate" required>
+        <button id="getImage">Get Images</button>
+        
+    </div>
+    <div id="navigator">
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <div id="display">
+        <!-- <div class="image">
+            <img src="" alt="">
+        </div>
+        <div class="image">
+            <img src="" alt="">
+        </div>
+        <div class="image">
+            <img src="" alt="">
+        </div>
+        <div class="image">
+            <img src="" alt="">
+        </div>
+        <div class="image">
+            <img src="" alt="">
+        </div> -->
+        <!-- <div><button id="next">Next &gt;&gt;</button></div> -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="dynamic.js"></script>
+</body>
+</html>
